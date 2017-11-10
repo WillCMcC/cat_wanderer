@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Wandering Cat",
+  "description": "The cat wanders",
+  "version": "1",
+
+  "permissions": [
+  ],
+  "browser_action": {
+    "default_icon": "img/F_SIT.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "img/catman.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+         ],
+      "js": [
+        "lib/onload.js"
+      ]
+    }
+],
+"web_accessible_resources": ["img/*"]
+}
